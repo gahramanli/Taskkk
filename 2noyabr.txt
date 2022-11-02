@@ -16,9 +16,9 @@ for (int i = 0; i < nums.Length; i++)
 Console.WriteLine(“Sum “+sum);
 
 Task2. C#
-[14:51, 02.11.2022] Nihat Gahramanli: }
-[14:52, 02.11.2022] Nihat Gahramanli: using System;
-Using System.Linq;
+ 
+using System;
+using System.Linq;
 
 public class Bp203
 {
