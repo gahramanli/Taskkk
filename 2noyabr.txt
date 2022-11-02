@@ -1,0 +1,71 @@
+
+
+Task1. C#
+
+int n=Convert.ToInt32(Console.ReadLine());
+int[] nums= new int[n];
+int sum = 0;
+for (int i = 0; i < nums.Length; i++)
+{
+    nums[i]=Convert.ToInt(Console.ReadLine());
+    if (Math.Abs(nums[i]>9 && Math.Abs(nums[i])<100)
+    {
+        sum+=nums[i];
+    }
+}
+Console.WriteLine(“Sum “+sum);
+
+Task2. C#
+[14:51, 02.11.2022] Nihat Gahramanli: }
+[14:52, 02.11.2022] Nihat Gahramanli: using System;
+Using System.Linq;
+
+public class Bp203
+{
+     public static void Main()
+     {
+          int arr = { 1, 2, 2, 3, 5, 8, 8 };
+
+          var duplicates = arr.GroupBy( x => x)
+                  .Where(g => g.Count() > 1)
+                  .Select(y => new { Item = y.Key,  Count = y.Count()  }) 
+                  .ToList();
+
+          ConsoleWriteLine(String.Join(“/n”, duplicates));
+  }
+}
+Task3. JavaScript
+  const Products = [ {
+       ProductId: 21,
+       ProductName: ”Book”,
+       ProductPrice: 20
+ },
+ {
+       ProductId: 22,
+       ProductName: “Copybook”,
+       ProductPrice:  10
+  },
+  {
+       ProductId: 23,
+       ProductName: “Pen”,
+       ProductPrice: 5
+  },
+  {
+       ProductId: 24,
+       ProductName: “Eraser”,
+       ProductPrice: 1
+  },
+  {
+        ProductId: 25,
+        ProductName: “Marker”,
+        ProductPrice: 2
+  }
+];
+        let count = 0;
+        let sum = 0;
+        for (let i = 0; i < Products.Length; i++) {
+               if (Products[i].ProductcsId % 2 != 0){
+                     sum += Products[i].ProductPrice;
+                     count++;
+   }
+}
