@@ -2,18 +2,18 @@
 
 Task1. C#
 
-int n=Convert.ToInt32(Console.ReadLine());
-int[] nums= new int[n];
-int sum = 0;
-for (int i = 0; i < nums.Length; i++)
+int[] ededler = {15,18,35,2,14};
+int cem= 0;
+for (int i = 0; i < ededler.Length; i++)
 {
-    nums[i]=Convert.ToInt(Console.ReadLine());
-    if (Math.Abs(nums[i]>9 && Math.Abs(nums[i])<100)
+    ededler[i] = Convert.ToInt32(Console.ReadLine());
+    if (ededler[i] > 9 && ededler[i] < 100)
     {
-        sum+=nums[i];
+        cem += ededler[i];
     }
 }
-Console.WriteLine(“Sum “+sum);
+Console.WriteLine("Cem="+cem);
+
 
 Task2. C#
  
@@ -35,37 +35,39 @@ public class Bp203
   }
 }
 Task3. JavaScript
-  const Products = [ {
-       ProductId: 21,
-       ProductName: ”Book”,
-       ProductPrice: 20
- },
- {
-       ProductId: 22,
-       ProductName: “Copybook”,
-       ProductPrice:  10
-  },
-  {
-       ProductId: 23,
-       ProductName: “Pen”,
-       ProductPrice: 5
-  },
-  {
-       ProductId: 24,
-       ProductName: “Eraser”,
-       ProductPrice: 1
-  },
-  {
-        ProductId: 25,
-        ProductName: “Marker”,
-        ProductPrice: 2
-  }
-];
-        let count = 0;
-        let sum = 0;
-        for (let i = 0; i < Products.Length; i++) {
-               if (Products[i].ProductcsId % 2 != 0){
-                     sum += Products[i].ProductPrice;
-                     count++;
-   }
+const Product = [ {
+    Id: 21,
+    Name: "Book",
+    Price: 20
+},
+{
+    Id: 22,
+    Name: "Copybook",
+    Price:  10
+},
+{
+    Id: 23,
+    Name: "Pen",
+    Price: 5
+},
+{
+    Id: 24,
+    Name: "Eraser",
+    Price: 1
+},
+{
+     Id: 25,
+     Name: "Marker",
+     Price: 2
 }
+];
+const cem= 0;
+
+     const say = 0;
+     for (let i = 0; i < Product.Length; i++) {
+            if (Product[i].Id % 2 != 0){
+                  cem += Product[i].Price;
+                  say++;
+}
+}
+console.log("ortalama: "+cem/say)
